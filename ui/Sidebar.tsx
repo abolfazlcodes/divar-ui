@@ -23,7 +23,7 @@ const Sidebar = () => {
             ))}
             <SidebarListItem href="/">
               <AiOutlineHome />
-              <span>
+              <span className="mb-4">
                 رزومه کارجویان <Highlight>(جدید)</Highlight>
               </span>
             </SidebarListItem>
