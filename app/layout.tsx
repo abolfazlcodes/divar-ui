@@ -20,8 +20,9 @@ export default function RootLayout({
       <body className={inter.className}>
         <Navigation />
 
-        <main className="m-auto w-full min-h-screenHeight max-w-screen-xl">
-          {children}
+        <main className="m-auto w-full min-h-screenHeight max-w-screen-xl mt-10 grid grid-cols-7">
+          <aside className="col-span-2">sidebars</aside>
+          <main className="col-span-5">{children}</main>
         </main>
       </body>
     </html>
