@@ -1,7 +1,8 @@
+import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
 import Navigation from "@/ui/Navigation";
+import Sidebar from "@/ui/Sidebar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,8 +21,10 @@ export default function RootLayout({
       <body className={inter.className}>
         <Navigation />
 
-        <main className="m-auto w-full min-h-screenHeight max-w-screen-xl">
-          {children}
+        <main className="m-auto w-full min-h-screenHeight max-w-screen-xl mt-10 grid grid-cols-9">
+          <Sidebar />
+
+          <main className="col-span-7">{children}</main>
         </main>
       </body>
     </html>

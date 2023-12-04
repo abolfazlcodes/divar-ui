@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Navigation = () => {
   return (
-    <nav className="px-3">
+    <nav className="px-3 shadow-md">
       <div className="m-auto flex w-full max-w-screen-xl items-center gap-1">
         <Link href="/">
           <Image
