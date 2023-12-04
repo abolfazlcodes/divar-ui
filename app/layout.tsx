@@ -2,6 +2,11 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/ui/Navigation";
+import Link from "next/link";
+import { AiOutlineHome, AiTwotoneCar } from "react-icons/ai";
+import { PiDeviceMobileCameraLight, PiLamp } from "react-icons/pi";
+import { FaChevronDown } from "react-icons/fa6";
+import Footer from "@/ui/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,9 +25,110 @@ export default function RootLayout({
       <body className={inter.className}>
         <Navigation />
 
-        <main className="m-auto w-full min-h-screenHeight max-w-screen-xl mt-10 grid grid-cols-7">
-          <aside className="col-span-2">sidebars</aside>
-          <main className="col-span-5">{children}</main>
+        <main className="m-auto w-full min-h-screenHeight max-w-screen-xl mt-10 grid grid-cols-9">
+          <aside className="col-span-2">
+            <aside className="text-[#000000de]">
+              <section className="border-b border-b-[#0000001f]">
+                <h3 className="text-sm text-[#000000de] py-2">دسته ها</h3>
+                <ul className="space-y-2">
+                  <li className="rounded-[4px] outiline-none cursor-pointer text-[#0000008f] hover:text-[#000000de] duration-150 transition-all">
+                    <Link href="/" className="flex py-1 items-center gap-2">
+                      <AiOutlineHome />
+                      <span>املاک</span>
+                    </Link>
+                  </li>
+                  <li className="rounded-[4px] outiline-none cursor-pointer text-[#0000008f] hover:text-[#000000de] duration-150 transition-all">
+                    <Link href="/" className="flex py-1 items-center gap-2">
+                      <AiTwotoneCar />
+                      <span>وسایل نقلیه</span>
+                    </Link>
+                  </li>
+                  <li className="rounded-[4px] outiline-none cursor-pointer text-[#0000008f] hover:text-[#000000de] duration-150 transition-all">
+                    <Link href="/" className="flex py-1 items-center gap-2">
+                      <PiDeviceMobileCameraLight />
+                      <span>کالای دیجیتال</span>
+                    </Link>
+                  </li>
+                  <li className="rounded-[4px] outiline-none cursor-pointer text-[#0000008f] hover:text-[#000000de] duration-150 transition-all">
+                    <Link href="/" className="flex py-1 items-center gap-2">
+                      <PiLamp />
+                      <span>خانه و آشپزخانه</span>
+                    </Link>
+                  </li>
+                  <li className="rounded-[4px] outiline-none cursor-pointer text-[#0000008f] hover:text-[#000000de] duration-150 transition-all">
+                    <Link href="/" className="flex py-1 items-center gap-2">
+                      <AiOutlineHome />
+                      <span>املاک</span>
+                    </Link>
+                  </li>
+                  <li className="rounded-[4px] outiline-none cursor-pointer text-[#0000008f] hover:text-[#000000de] duration-150 transition-all">
+                    <Link href="/" className="flex py-1 items-center gap-2">
+                      <AiTwotoneCar />
+                      <span>وسایل نقلیه</span>
+                    </Link>
+                  </li>
+                  <li className="rounded-[4px] outiline-none cursor-pointer text-[#0000008f] hover:text-[#000000de] duration-150 transition-all">
+                    <Link href="/" className="flex py-1 items-center gap-2">
+                      <PiDeviceMobileCameraLight />
+                      <span>کالای دیجیتال</span>
+                    </Link>
+                  </li>
+                  <li className="rounded-[4px] outiline-none cursor-pointer text-[#0000008f] hover:text-[#000000de] duration-150 transition-all">
+                    <Link href="/" className="flex py-1 items-center gap-2">
+                      <PiLamp />
+                      <span>خانه و آشپزخانه</span>
+                    </Link>
+                  </li>
+                  <li className="rounded-[4px] outiline-none cursor-pointer text-[#0000008f] hover:text-[#000000de] duration-150 transition-all">
+                    <Link href="/" className="flex py-1 items-center gap-2">
+                      <PiDeviceMobileCameraLight />
+                      <span>کالای دیجیتال</span>
+                    </Link>
+                  </li>
+                  <li className="rounded-[4px] pb-2 outiline-none cursor-pointer text-[#0000008f] hover:text-[#000000de] duration-150 transition-all">
+                    <Link href="/" className="flex py-1 items-center gap-2">
+                      <PiLamp />
+                      <span>خانه و آشپزخانه</span>
+                    </Link>
+                  </li>
+                </ul>
+              </section>
+
+              {/* other section  */}
+              <section className="mt-1">
+                <div className="border-b border-b-[#0000001f] flex items-center relative py-1">
+                  <div className="inline-flex box-border items-center rounded-[4px] cursor-pointer grow-[1] h-12 outline-none text-base">
+                    <FaChevronDown className="text-sm" />
+                    <span className="text-[#000000de] font-[500] mr-1">
+                      محل
+                    </span>
+                  </div>
+                </div>
+
+                <div className="border-b border-b-[#0000001f] flex items-center relative py-1">
+                  <div className="inline-flex  box-border items-center rounded-[4px] cursor-pointer grow-[1] h-12 outline-none text-base">
+                    <FaChevronDown className="text-sm" />
+                    <span className="text-[#000000de] font-[500] mr-1">
+                      قیمت
+                    </span>
+                  </div>
+                </div>
+
+                <div className="border-b border-b-[#0000001f] flex items-center relative py-1">
+                  <div className="inline-flex box-border items-center rounded-[4px] cursor-pointer grow-[1] h-12 outline-none text-base">
+                    <FaChevronDown className="text-sm" />
+                    <span className="text-[#000000de] font-[500] mr-1">
+                      وضعیت آگهی
+                    </span>
+                  </div>
+                </div>
+              </section>
+            </aside>
+
+            <Footer />
+          </aside>
+
+          <main className="col-span-7">{children}</main>
         </main>
       </body>
     </html>
