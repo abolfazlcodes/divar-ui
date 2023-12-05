@@ -25,7 +25,7 @@ export default function RootLayout({
           <Sidebar />
 
           <main
-            className="col-span-6 lg:col-span-9 min-h-[10rem]"
+            className="remove-scrollbar col-span-8 lg:col-span-9 min-h-[10rem] h-screen overflow-y-auto"
             data-testid="main-element"
           >
             {children}

@@ -11,7 +11,10 @@ import Footer from "./Footer";
 
 const Sidebar = () => {
   return (
-    <aside className="col-span-3 lg:col-span-2" data-testid="sidebar-element">
+    <aside
+      className="remove-scrollbar col-span-3 lg:col-span-2 h-screen overflow-scroll"
+      data-testid="sidebar-element"
+    >
       <article className="text-[#000000de]">
         <section className="border-b w-full md:w-[90%] border-b-[#0000001f]">
           <h3 className="text-sm text-[#000000de] py-2">دسته ها</h3>

@@ -13,7 +13,7 @@ const SearchBox = () => {
                 type="text"
                 name=""
                 id=""
-                className="bg-transparent border-none border-4 box-border text-[#000000de] flex text-base outline-0 duration-150 ease-linear"
+                className="bg-transparent border-none border-4 box-border text-[#000000de] flex text-sm outline-0 duration-150 ease-linear"
                 autoComplete="off"
                 placeholder="جستجو در همه آگهی ها"
               />
