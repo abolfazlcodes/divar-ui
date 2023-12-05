@@ -36,7 +36,7 @@ const Button: React.FC<IButtonProps> = ({
           type === "primary"
             ? "group-hover:text-white"
             : "group-hover:text-black"
-        } duration-150 ease-linear`}
+        } duration-150 ease-linear font-semibold`}
       >
         {children}
       </span>
