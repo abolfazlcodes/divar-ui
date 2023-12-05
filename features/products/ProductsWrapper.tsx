@@ -7,7 +7,7 @@ interface IProductsWrapperProps {
 
 const ProductsWrapper: React.FC<IProductsWrapperProps> = ({ data }) => {
   return (
-    <div className="pt-0 pb-44 min-h-[10rem] gap-4 flex flex-wrap mr-4">
+    <div className="pt-2 pb-44 min-h-[16rem] gap-4 flex flex-wrap mr-4">
       {data.map((product) => (
         <ProductsCard
           key={product.id}

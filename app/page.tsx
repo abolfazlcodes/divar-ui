@@ -1,3 +1,6 @@
+import { productsData } from "@/data/products";
+import ProductsWrapper from "@/features/products/ProductsWrapper";
+
 export default function Home() {
   return (
     <>
@@ -5,6 +8,8 @@ export default function Home() {
         دیوار تهران - نیازمندی‌ های رایگان، آگهی‌های خرید، فروش نو و دست دوم و
         کارکرده، استخدام و خدمات
       </h1>
+
+      <ProductsWrapper data={productsData} />
     </>
   );
 }
