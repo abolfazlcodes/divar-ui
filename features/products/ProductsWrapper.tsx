@@ -15,6 +15,7 @@ const ProductsWrapper: React.FC<IProductsWrapperProps> = ({ data }) => {
           createdAt={product.createdAt}
           description={product.description}
           imageUrls={product.imageUrls}
+          href={product.href}
         />
       ))}
     </div>

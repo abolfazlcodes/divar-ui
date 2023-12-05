@@ -1,7 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["s100.divarcdn.com"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "s100.divarcdn.com",
+      },
+    ],
+    // domains: ["s100.divarcdn.com"],
   },
 };
 
