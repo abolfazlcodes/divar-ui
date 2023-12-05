@@ -3,7 +3,8 @@ import {
   sidebarListItems,
 } from "@/constants/sidebar.contants";
 import SidebarListItem from "./SidebarLitsItem";
-import { AiOutlineHome } from "react-icons/ai";
+import { LuUserCheck } from "react-icons/lu";
+
 import Highlight from "./Highlight";
 import SidebarListBox from "./SidebarListBox";
 import Footer from "./Footer";
@@ -22,8 +23,8 @@ const Sidebar = () => {
               </SidebarListItem>
             ))}
             <SidebarListItem href="/">
-              <AiOutlineHome />
-              <span className="mb-4">
+              <LuUserCheck />
+              <span>
                 رزومه کارجویان <Highlight>(جدید)</Highlight>
               </span>
             </SidebarListItem>
