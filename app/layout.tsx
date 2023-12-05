@@ -21,10 +21,13 @@ export default function RootLayout({
       <body className={vazirmatn.className}>
         <Navigation />
 
-        <main className="m-auto lg:px-10 px-5 w-full min-h-screenHeight max-w-screen-2xl mt-10 grid grid-cols-9">
+        <main className="m-auto lg:px-10 px-5 w-full min-h-screenHeight max-w-screen-2xl mt-10 grid grid-cols-11">
           <Sidebar />
 
-          <main className="col-span-6 lg:col-span-7 min-h-[10rem]">
+          <main
+            className="col-span-6 lg:col-span-9 min-h-[10rem]"
+            data-testid="main-element"
+          >
             {children}
           </main>
         </main>
