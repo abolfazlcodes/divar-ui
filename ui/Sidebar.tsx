@@ -23,6 +23,7 @@ const Sidebar = () => {
               </SidebarListItem>
             ))}
             <SidebarListItem styles={{ marginBottom: "2rem" }} href="/">
+
               <LuUserCheck />
               <span>
                 رزومه کارجویان <Highlight>(جدید)</Highlight>
