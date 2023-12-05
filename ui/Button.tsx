@@ -5,6 +5,7 @@ interface IButtonProps {
   children: ReactNode;
   styles?: CSSProperties;
   type?: "primary" | "secondary";
+  changeOrder?: boolean;
 }
 
 const Button: React.FC<IButtonProps> = ({
@@ -12,6 +13,7 @@ const Button: React.FC<IButtonProps> = ({
   children,
   type = "secondary",
   styles,
+  changeOrder = false,
 }) => {
   return (
     <button
@@ -24,8 +26,9 @@ const Button: React.FC<IButtonProps> = ({
     >
       {icon &&
         cloneElement(icon, {
-          className:
-            "text-[#0000008f] text-sm group-hover:text-black duration-150 ease-linear",
+          className: `text-[#0000008f] text-sm group-hover:text-black duration-150 ease-linear ${
+            changeOrder && "order-1"
+          } `,
         })}
       <span
         className={`${

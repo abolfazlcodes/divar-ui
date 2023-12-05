@@ -1,10 +1,10 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Vazirmatn } from "next/font/google";
 import Navigation from "@/ui/Navigation";
 import Sidebar from "@/ui/Sidebar";
 
-const inter = Inter({ subsets: ["latin"] });
+const vazirmatn = Vazirmatn({ subsets: ["arabic"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" dir="rtl">
-      <body className={inter.className}>
+      <body className={vazirmatn.className}>
         <Navigation />
 
         <main className="m-auto lg:px-10 px-5 w-full min-h-screenHeight max-w-screen-2xl mt-10 grid grid-cols-9">

@@ -15,7 +15,7 @@ const FooterImageLink: React.FC<IFooterImageLinkProps> = ({
   return (
     <Link
       href={href}
-      className="cursor-pointer h-auto my-4 m-width-[120px] text-center w-1/2"
+      className="cursor-pointer h-auto my-4 m-width-[120px] text-center w-1/2 md:w-1/3"
     >
       <div className="h-[91px] w-[84px] bg-none relative">
         <Image
