@@ -17,7 +17,7 @@ const Button: React.FC<IButtonProps> = ({
 }) => {
   return (
     <button
-      className={`flex items-center text-sm gap-1 px-4 py-2 rounded-[4px] transition-all group duration-150 ease-linear ${
+      className={`flex items-center text-sm gap-1 px-4 py-3 rounded-[4px] transition-all group duration-150 ease-linear ${
         type === "primary"
           ? "bg-[#a62626] hover:bg-[#be3737] focus:bg-[#be3737] text-white hover:text-white"
           : "hover:bg-gray-100 text-[#0000008f]"
