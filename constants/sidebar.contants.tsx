@@ -6,6 +6,12 @@ import {
   PiAndroidLogoFill,
   PiDeviceMobileCameraLight,
   PiLamp,
+  PiPaintBrushBroad,
+  PiWatch,
+  PiDiceSix,
+  PiUsers,
+  PiMicrophone,
+  PiSuitcaseSimple,
 } from "react-icons/pi";
 
 export const sidebarListItems = [
@@ -35,37 +41,37 @@ export const sidebarListItems = [
   },
   {
     id: 5,
-    icon: <AiOutlineHome />,
+    icon: <PiPaintBrushBroad />,
     title: "خدمات",
     href: "/",
   },
   {
     id: 6,
-    icon: <AiOutlineHome />,
+    icon: <PiWatch />,
     title: "وسایل شخصی",
     href: "/",
   },
   {
     id: 7,
-    icon: <AiOutlineHome />,
+    icon: <PiDiceSix />,
     title: "سرگرمی و فراغت",
     href: "/",
   },
   {
     id: 8,
-    icon: <AiOutlineHome />,
+    icon: <PiUsers />,
     title: "اجتماعی",
     href: "/",
   },
   {
     id: 9,
-    icon: <AiOutlineHome />,
+    icon: <PiMicrophone />,
     title: "تجهیزات و صنعتی",
     href: "/",
   },
   {
     id: 10,
-    icon: <AiOutlineHome />,
+    icon: <PiSuitcaseSimple />,
     title: "استخدام و کاریابی",
     href: "/",
   },
