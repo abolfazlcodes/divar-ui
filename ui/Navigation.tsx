@@ -6,8 +6,8 @@ import Image from "next/image";
 
 const Navigation = () => {
   return (
-    <nav className="px-3 shadow-md">
-      <div className="m-auto flex w-full max-w-screen-xl items-center gap-1">
+    <nav className="shadow-md sticky">
+      <div className="m-auto px-10 py-1 flex w-full max-w-screen-2xl items-center gap-1">
         <Link href="/">
           <Image
             src="/logo.png"
