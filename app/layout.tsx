@@ -24,7 +24,7 @@ export default function RootLayout({
         <main className="m-auto lg:px-10 px-5 w-full min-h-screenHeight max-w-screen-2xl mt-10 grid grid-cols-9">
           <Sidebar />
 
-          <main className="col-span-7 min-h-[10rem] border border-red-500">
+          <main className="col-span-6 lg:col-span-7 min-h-[10rem]">
             {children}
           </main>
         </main>
