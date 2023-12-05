@@ -13,16 +13,16 @@ const Sidebar = () => {
   return (
     <aside className="col-span-3 lg:col-span-2" data-testid="sidebar-element">
       <article className="text-[#000000de]">
-        <section className="border-b border-b-[#0000001f]">
+        <section className="border-b w-full md:w-[90%] border-b-[#0000001f]">
           <h3 className="text-sm text-[#000000de] py-2">دسته ها</h3>
-          <ul className="space-y-2">
+          <ul>
             {sidebarListItems.map((listItem) => (
               <SidebarListItem key={listItem.id} href={listItem.href}>
-                {listItem.icon}
+                <span className="text-base">{listItem.icon}</span>
                 <span>{listItem.title}</span>
               </SidebarListItem>
             ))}
-            <SidebarListItem href="/">
+            <SidebarListItem styles={{ marginBottom: "2rem" }} href="/">
               <LuUserCheck />
               <span>
                 رزومه کارجویان <Highlight>(جدید)</Highlight>
@@ -31,7 +31,7 @@ const Sidebar = () => {
           </ul>
         </section>
 
-        <section className="mt-1">
+        <section className="mt-1 w-full md:w-[90%]">
           {sidebarListBoxes.map((item) => (
             <SidebarListBox key={item.id}>
               <span className="text-[#000000de] font-[500] mr-1">

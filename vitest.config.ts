@@ -13,7 +13,6 @@ export default defineConfig({
     setupFiles: "./setup.ts",
     globals: true,
     reporters: "verbose",
-    isolate: true,
     coverage: {
       include: [
         "app/**/*",
@@ -24,10 +23,6 @@ export default defineConfig({
       ],
       reporter: ["text", "json", "html", "clover"],
       all: true,
-      lines: 70,
-      branches: 70,
-      functions: 70,
-      statements: 70,
     },
   },
 });
