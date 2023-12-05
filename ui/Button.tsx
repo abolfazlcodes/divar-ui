@@ -29,6 +29,7 @@ const Button: React.FC<IButtonProps> = ({
           className: `text-[#0000008f] text-sm group-hover:text-black duration-150 ease-linear ${
             changeOrder && "order-1"
           } `,
+          "data-testid": "button-icon-element",
         })}
       <span
         className={`${
