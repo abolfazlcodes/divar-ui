@@ -28,7 +28,7 @@ const Footer = () => {
       </article>
 
       {/* validation */}
-      <article className="flex items-start justify-between m-3">
+      <article className="flex items-start justify-between m-3 flex-wrap">
         {footerValidationImagesLinks.map((linkItem) => (
           <FooterImageLink
             key={linkItem.id}

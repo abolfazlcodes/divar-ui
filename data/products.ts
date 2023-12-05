@@ -4,6 +4,7 @@ export const productsData: ProductProps[] = [
   {
     id: 1,
     title: "اسپیکر خانگی",
+    href: "/اسپیکر-خانگی",
     description: ["کارکرده", "۱,۰۰۰,۰۰۰ تومان"],
     createdAt: "دقایقی پیش",
     imageUrls: [
@@ -20,6 +21,7 @@ export const productsData: ProductProps[] = [
   {
     id: 2,
     title: "تاب، لباس آتشنشانی، بازی فکری، کالسکه",
+    href: "/تاب-لباس-آتشنشانی-بازی فکری-کالسکه",
     description: ["در حد نو", "۵۰۰,۰۰۰ تومان"],
     createdAt: "لحظاتی پیش در یاخچی‌آباد",
     imageUrls: [
@@ -36,6 +38,7 @@ export const productsData: ProductProps[] = [
   {
     id: 3,
     title: "دستگاه چاپ سیلک مدلUCP204 با وزنه",
+    href: "/دستگاه-چاپ-سیلک-مدلUCP204-با-وزنه",
     description: ["نو", "۱,۰۵۰,۰۰۰ تومان"],
     createdAt: "دقایقی پیش",
     imageUrls: [
@@ -52,6 +55,7 @@ export const productsData: ProductProps[] = [
   {
     id: 4,
     title: "پت(بطری پلاستیکی جوس750cc)",
+    href: "/پت(بطری-پلاستیکی-جوس750cc)",
     description: ["نو", "۱,۱۰۰ تومان"],
     createdAt: "دقایقی پیش",
     imageUrls: [
@@ -68,6 +72,7 @@ export const productsData: ProductProps[] = [
   {
     id: 5,
     title: "قالپاق سمند",
+    href: "/قالپاق-سمند",
     description: ["", "۵۰,۰۰۰ تومان"],
     createdAt: "دقایقی پیش",
     imageUrls: [
@@ -84,6 +89,7 @@ export const productsData: ProductProps[] = [
   {
     id: 6,
     title: "۱۶۵ متر آپارتمان نوساز در شهران",
+    href: "/۱۶۵-متر-آپارتمان-نوساز-در-شهران",
     description: ["", "۱۷,۵۰۰,۰۰۰,۰۰۰ تومان"],
     createdAt: "دقایقی پیش",
     imageUrls: [
@@ -100,6 +106,7 @@ export const productsData: ProductProps[] = [
   {
     id: 7,
     title: "میز و صندلی ناهارخوری پارچه ای اریانا",
+    href: "/میز-و-صندلی-ناهارخوری-پارچه-ای-اریانا",
     description: ["نو", "۳,۴۰۰,۰۰۰ تومان"],
     createdAt: "دقایقی پیش",
     imageUrls: [
@@ -116,6 +123,7 @@ export const productsData: ProductProps[] = [
   {
     id: 8,
     title: "خدمات شیشه بری کل تهران سیار و ثابت",
+    href: "/خدمات-شیشه-بری-کل-تهران-سیار-و-ثابت",
     description: ["", ""],
     createdAt: "دقایقی پیش",
     imageUrls: [
@@ -132,6 +140,7 @@ export const productsData: ProductProps[] = [
   {
     id: 9,
     title: "پژو 405 GLX بنزینی، مدل ۱۳۹۱",
+    href: "/پژو-405- GLX-بنزینی-مدل",
     description: ["۱۸۸,۰۰۰ کیلومتر", "۱,۱۱۱,۱۱۱,۱۱۱ تومان"],
     createdAt: "یک ربع پیش",
     imageUrls: [
