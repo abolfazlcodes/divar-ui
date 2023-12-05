@@ -21,10 +21,12 @@ export default function RootLayout({
       <body className={inter.className}>
         <Navigation />
 
-        <main className="m-auto px-10 w-full min-h-screenHeight max-w-screen-2xl mt-10 grid grid-cols-9">
+        <main className="m-auto lg:px-10 px-5 w-full min-h-screenHeight max-w-screen-2xl mt-10 grid grid-cols-9">
           <Sidebar />
 
-          <main className="col-span-7 min-h-[10rem]">{children}</main>
+          <main className="col-span-7 min-h-[10rem] border border-red-500">
+            {children}
+          </main>
         </main>
       </body>
     </html>

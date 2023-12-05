@@ -36,10 +36,12 @@ const Navigation = () => {
             <div className="inline-block relative">
               <Button icon={<PiUser />}>دیوار من</Button>
             </div>
-            <Button styles={{ marginRight: "8px" }} icon={<PiChatBold />}>
-              چت
-            </Button>
-            <Button styles={{ marginRight: "8px" }}>پشتیبانی</Button>
+            <div className="hidden lg:flex">
+              <Button styles={{ marginRight: "8px" }} icon={<PiChatBold />}>
+                چت
+              </Button>
+              <Button styles={{ marginRight: "8px" }}>پشتیبانی</Button>
+            </div>
             <Button styles={{ marginRight: "16px" }} type="primary">
               ثبت آگهی
             </Button>

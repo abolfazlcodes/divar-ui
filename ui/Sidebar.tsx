@@ -10,7 +10,7 @@ import Footer from "./Footer";
 
 const Sidebar = () => {
   return (
-    <aside className="col-span-2">
+    <aside className="col-span-2 border">
       <article className="text-[#000000de]">
         <section className="border-b border-b-[#0000001f]">
           <h3 className="text-sm text-[#000000de] py-2">دسته ها</h3>
