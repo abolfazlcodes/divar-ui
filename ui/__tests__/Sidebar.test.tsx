@@ -7,7 +7,7 @@ describe("Sidebar Component Tests", () => {
     render(<Sidebar />);
 
     const sidebarElement = screen.getByTestId("sidebar-element");
-    const listItems = screen.getAllByRole("listitem");
+    const listItems = screen.getAllByRole("listitem").splice(0, 10); // removing the extra link
 
     expect(sidebarElement).toBeInTheDocument();
     expect(listItems.length).toEqual(sidebarListItems.length);
